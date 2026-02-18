@@ -1,0 +1,9 @@
+Prompt : Hey chatgpt, im trying to make it so that my method displays the number of the favorite pokemon 
+using the variable row,but it's always 1 below, is there any way I can change this? (insert drawAllPokemon method code)
+
+Response :  drawText("Fav Pokemon #" +(row + 1), 100, 50); 
+told me to put the row in parenthesis with the +1 to fix the 1 off
+
+2/12/26
+
+------------------------------------------------------------------------------------------------------------------------------

@@ -19,15 +19,10 @@ Implement algorithms – Implement one or more algorithms that use loops and log
 
 ## Video
 
-Record a short video of your story to display here on your README. You can do this by:
+<img width="310" height="312" alt="image" src="https://github.com/user-attachments/assets/0b8e7941-a235-4e6e-87cd-8c1c51b88602" />
 
-- Screen record your project running on Code.org.
-- Upload that recording to YouTube.
-- Take a thumbnail for your image.
-- Upload the thumbnail image to your repo.
-- Use the following markdown
 
-[![Thumbnail for my projet](nameOfThumbnail.png)](youtube-URL-here)
+https://www.youtube.com/shorts/7vCdLCIBiz4
 
 ## Story Description
 
@@ -36,3 +31,7 @@ The story my animation showcases is my favorite pokemon, and my opinions on thos
 ## Image Filter Analysis
 
 Choose at least 2 filters used in your animation to explain how the pixels are modified. If you created a new image filter that was not one of the ones from this unit, make sure to explain and analyze that filter(s) before choosing ones that came from this unit.
+
+The amplifyBlue image filter loops through each pixel, and for each pixel, the method decreases the red value by 50 and increased the blue value by 75. Then the new values are stored into new variables such as newBlue, newGreen (green isn't altered), and newRed. To make sure the new colors don't surpass the 255 threshold, a conditional statement checks if the newValue is above 255, and if it is, the color's value is set to 255. Afterwards, the colors are applied to the current pixel to make the blue pop more.
+
+The sharpen image filter loops through each pixel, and for each pixel, the method starts at row and column 1 along with the arrays length-1 to stay in bounds. The method uses the top left adjacent pixel to compare it to the current colors of the current pixel, using this comparison, a new average variable is made by combining the differences in each color from the comparison, then dividing by the amount of colors. This average variable will then decide the strength of how much a color will darken or lighten, leading to the "sharpened" effect that will then be applied onto the current pixel.
